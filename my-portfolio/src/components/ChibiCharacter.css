@@ -1,0 +1,212 @@
+.chibi-wrapper {
+  position: fixed;
+  bottom: 2rem;
+  right: 3rem;
+  z-index: 50;
+  animation: float 3s ease-in-out infinite;
+  pointer-events: none;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+.chibi {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+/* HAIR */
+.chibi-hair {
+  position: absolute;
+  top: -8px;
+  width: 90px;
+  z-index: 2;
+}
+
+.hair-top {
+  width: 70px;
+  height: 35px;
+  background: #1a1a1a;
+  border-radius: 50% 50% 0 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.hair-left {
+  position: absolute;
+  left: 2px;
+  top: 15px;
+  width: 18px;
+  height: 28px;
+  background: #1a1a1a;
+  border-radius: 50% 0 0 50%;
+}
+
+.hair-right {
+  position: absolute;
+  right: 2px;
+  top: 15px;
+  width: 18px;
+  height: 28px;
+  background: #1a1a1a;
+  border-radius: 0 50% 50% 0;
+}
+
+/* HEAD */
+.chibi-head {
+  width: 80px;
+  height: 80px;
+  background: #ffd5a8;
+  border-radius: 50%;
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+
+/* EYES */
+.chibi-eyes {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 4px;
+}
+
+.eye-socket {
+  width: 18px;
+  height: 18px;
+  background: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.pupil {
+  width: 10px;
+  height: 10px;
+  background: #1a1a1a;
+  border-radius: 50%;
+  transition: transform 0.05s linear;
+  position: relative;
+}
+
+.pupil::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 3px;
+  height: 3px;
+  background: white;
+  border-radius: 50%;
+}
+
+/* BLUSH */
+.chibi-blush {
+  display: flex;
+  gap: 24px;
+  position: absolute;
+  bottom: 22px;
+}
+
+.blush {
+  width: 14px;
+  height: 8px;
+  background: rgba(255, 150, 150, 0.5);
+  border-radius: 50%;
+  filter: blur(2px);
+}
+
+/* MOUTH */
+.chibi-mouth {
+  width: 16px;
+  height: 7px;
+  border-bottom: 2.5px solid #c47a5a;
+  border-radius: 0 0 50% 50%;
+  margin-top: 2px;
+}
+
+/* BODY */
+.chibi-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: -4px;
+}
+
+.chibi-shirt {
+  width: 64px;
+  height: 50px;
+  background: #1a3a6e;
+  border-radius: 10px 10px 4px 4px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+/* tiny GCE on shirt */
+.chibi-shirt::after {
+  content: 'GCE';
+  font-size: 8px;
+  color: rgba(100, 160, 255, 0.8);
+  letter-spacing: 1px;
+  font-weight: 700;
+}
+
+.arm {
+  position: absolute;
+  width: 16px;
+  height: 36px;
+  background: #1a3a6e;
+  border-radius: 8px;
+  bottom: 0;
+}
+
+.left-arm {
+  left: -12px;
+  transform: rotate(10deg);
+}
+
+.right-arm {
+  right: -12px;
+  transform: rotate(-10deg);
+}
+
+/* PANTS */
+.chibi-pants {
+  display: flex;
+  gap: 4px;
+  margin-top: 2px;
+}
+
+.leg {
+  width: 26px;
+  height: 28px;
+  background: #111;
+  border-radius: 4px 4px 8px 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* SHOES */
+.leg::after {
+  content: '';
+  display: block;
+  width: 30px;
+  height: 10px;
+  background: #222;
+  border-radius: 4px;
+  margin-top: 20px;
+  margin-left: -2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.5);
+}

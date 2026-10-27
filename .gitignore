@@ -1,0 +1,10 @@
+node_modules/
+dist/
+*.pdf
+
+.env
+.env.*
+!.env.example
+
+.vscode/*
+!.vscode/extensions.json
