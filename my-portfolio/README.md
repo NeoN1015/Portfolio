@@ -84,6 +84,7 @@ For a complete architecture diagram using HTML and CSS, the future implementatio
 
 ## Suggested upgrade roadmap
 
+
 ### Priority 1 — Complete and verify the content
 
 - Confirm project dates, names, descriptions, technologies, and completion status against the resume and project documentation.
